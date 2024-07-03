@@ -1,8 +1,10 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+
 const EmployeeSchema = new mongoose.Schema({
     name: String,
     email: String,
-    password: String
+    password: String,
 })
-const EmployeeModel = mongoose.model("employees", EmployeeSchema);
+const EmployeeModel = mongoose.model('employee', EmployeeSchema);
 module.exports = EmployeeModel;
+
